@@ -21,7 +21,7 @@
     itemPrice = "<p class ='price'>" + "$" + item.price + "usd" + "</p>";
 
 
-    resultsbin = "<li> " + itemTitle + itemSeller + itemPrice  + itemImage  + "</li>";
+    resultsbin = "<li> " + itemImage + itemTitle + itemSeller + itemPrice + "</li>";
 
     resultsof.append(resultsbin);
 

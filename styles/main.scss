@@ -219,36 +219,61 @@ li {
   position: relative;
 }
 .page-container {
-  @include outer-container;
 }
 
 .results-content {
   @include outer-container;
-  float: left;
+  // @include span-columns(3);
+
+  float: right;
   background-color: #fff;
   text-align: center;
   margin: 5px 5px 20px;
   padding: 5px 5px 10px;
-  width: 222px;
+  width: 73%;
   border-radius: 3px;
-  @include span-columns(9);
 
 
 
 }
 
-.content-results {
-  width: 50px;
+
+
+#content-results {
+
+  // width: 50px;
   // height: 150px;
-  @include span-columns(4);
-  @include omega(3n);
   margin-bottom: 10px;
 
+  // float: left;
+
+
+li {
+  @include span-columns(4);
+  @include omega(3n);
+  float: left;
+  border: 1px solid red;
+  width: 200px;
+  height: 273px;
+
+
+
+  }
+
+ p #price {
+    float: right;
+  }
+
+ p #seller{
+    float: left;
+  }
+
+
+
 }
 
-// .content-results {
-//   @include span-columns(9);
-// }
+
+
 
 
 
