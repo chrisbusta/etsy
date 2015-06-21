@@ -7,7 +7,16 @@ $font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 // * {
 //   border: 1px solid red;
 // }
-
+$tan: #F5F5F1;
+$lighttan: #FBFBFA;
+$blue: #39AAC5;
+$darkblue: #1692B3;
+$orange: #F45800;
+$green: #78C042;
+$white: #FFFFFF;
+$black: #555555;
+$gray: #B2B2B2;
+$lightgray: #E1E3DF;
 
 
 body {
@@ -223,8 +232,6 @@ li {
 
 .results-content {
   @include outer-container;
-  // @include span-columns(3);
-
   float: right;
   background-color: #fff;
   text-align: center;
@@ -234,6 +241,30 @@ li {
   border-radius: 3px;
 
 
+#itemImage {
+  object-fit: fill;
+}
+
+#itemTitle {
+  color: $black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#itemSeller {
+float: left;
+  color: $gray;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+#itemPrice {
+  float: right;
+  color: #78C042;
+}
 
 }
 
@@ -260,14 +291,10 @@ li {
 
   }
 
- p #price {
-    float: right;
-  }
 
- p #seller{
-    float: left;
-  }
-
+//   #price {
+//   color: green;
+// }
 
 
 }

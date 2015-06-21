@@ -203,6 +203,26 @@ li {
   content: "";
   display: table; }
 
+.results-content #itemImage {
+  object-fit: fill; }
+
+.results-content #itemTitle {
+  color: #555555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.results-content #itemSeller {
+  float: left;
+  color: #B2B2B2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.results-content #itemPrice {
+  float: right;
+  color: #78C042; }
+
 #content-results {
   margin-bottom: 10px; }
 
@@ -224,9 +244,3 @@ li {
 
 #content-results li:nth-child(3n+1) {
   clear: left; }
-
-#content-results p #price {
-  float: right; }
-
-#content-results p #seller {
-  float: left; }
