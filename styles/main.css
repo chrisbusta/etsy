@@ -41,6 +41,10 @@ a {
 .logo a img {
   width: 75px; }
 
+.right img {
+  width: 26px;
+  background-color: #FFFFFF; }
+
 img {
   border: 0; }
 
@@ -191,7 +195,6 @@ li {
   margin-left: auto;
   margin-right: auto;
   float: right;
-  background-color: #fff;
   text-align: center;
   margin: 5px 5px 20px;
   padding: 5px 5px 10px;
@@ -203,28 +206,28 @@ li {
   content: "";
   display: table; }
 
-.results-content #itemImage {
+.itemImage {
   object-fit: fill; }
 
-.results-content #itemTitle {
+#content-results {
+  margin-bottom: 10px; }
+
+#content-results .itemTitle {
   color: #555555;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.results-content #itemSeller {
+#content-results .itemSeller {
   float: left;
   color: #B2B2B2;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.results-content #itemPrice {
+#content-results .itemPrice {
   float: right;
   color: #78C042; }
-
-#content-results {
-  margin-bottom: 10px; }
 
 #content-results li {
   float: left;
@@ -232,9 +235,12 @@ li {
   margin-right: 2.35765%;
   width: 31.76157%;
   float: left;
-  border: 1px solid red;
   width: 200px;
-  height: 273px; }
+  height: 273px;
+  margin-top: 30px;
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid #E1E3DF; }
 
 #content-results li:last-child {
   margin-right: 0; }
@@ -244,3 +250,38 @@ li {
 
 #content-results li:nth-child(3n+1) {
   clear: left; }
+
+#content-results li:hover .socialBtn {
+  opacity: 1; }
+
+#content-results li .socialRow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 2px; }
+
+#content-results li .socialBtn {
+  background-color: #FFFFFF;
+  border: 1px solid #B2B2B2;
+  margin: 5px 2px 0;
+  padding: 4px;
+  height: 25px;
+  width: 25px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: all 0.2s ease; }
+
+#content-results li .socialBtn:hover {
+  box-shadow: 0px 1px 2px #555555; }
+
+#content-results li .socialBtn .socialFav {
+  background-image: url(../images/heart.png);
+  background-size: cover;
+  height: 15px;
+  width: 15px; }
+
+#content-results li .socialBtn .socialHam {
+  background-image: url(styles/images/hamburger.png);
+  background-size: cover;
+  height: 15px;
+  width: 15px; }

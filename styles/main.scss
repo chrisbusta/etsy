@@ -4,14 +4,8 @@
 $font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
 
-// * {
-//   border: 1px solid red;
-// }
-$tan: #F5F5F1;
-$lighttan: #FBFBFA;
-$blue: #39AAC5;
-$darkblue: #1692B3;
-$orange: #F45800;
+
+
 $green: #78C042;
 $white: #FFFFFF;
 $black: #555555;
@@ -58,6 +52,11 @@ a {
 
  .logo a img {
   width: 75px;
+}
+
+.right img {
+  width: 26px;
+  background-color: #FFFFFF;
 }
 
 img {
@@ -207,7 +206,7 @@ li {
 }
 
 .results {
-  // float: left;
+
   margin: 0 auto;
 }
 .results-header {
@@ -233,7 +232,7 @@ li {
 .results-content {
   @include outer-container;
   float: right;
-  background-color: #fff;
+  // background-color: #fff;
   text-align: center;
   margin: 5px 5px 20px;
   padding: 5px 5px 10px;
@@ -241,19 +240,28 @@ li {
   border-radius: 3px;
 
 
-#itemImage {
+
+}
+
+.itemImage {
   object-fit: fill;
 }
 
-#itemTitle {
+
+
+#content-results {
+  margin-bottom: 10px;
+
+
+.itemTitle {
   color: $black;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-#itemSeller {
-float: left;
+.itemSeller {
+  float: left;
   color: $gray;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -261,40 +269,71 @@ float: left;
 
 }
 
-#itemPrice {
+.itemPrice {
   float: right;
-  color: #78C042;
+  color: $green;
 }
-
-}
-
-
-
-#content-results {
-
-  // width: 50px;
-  // height: 150px;
-  margin-bottom: 10px;
-
-  // float: left;
 
 
 li {
   @include span-columns(4);
   @include omega(3n);
   float: left;
-  border: 1px solid red;
   width: 200px;
   height: 273px;
+  margin-top: 30px;
+   position: relative;
+  background: $white;
+  border: 1px solid $lightgray;
+
+
+  &:hover .socialBtn {
+    opacity: 1;
+}
+  .socialRow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 2px;
+}
+
+.socialBtn {
+  background-color: $white;
+  border: 1px solid $gray;
+  margin: 5px 2px 0;
+  padding: 4px;
+  height: 25px;
+  width: 25px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: all .2s ease;
+
+  &:hover {
+    box-shadow: 0px 1px 2px $black;
+
+}
+.socialFav {
+  background-image: url(../images/heart.png);
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+}
+
+.socialHam {
+  background-image: url(styles/images/hamburger.png);
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+  }
+
+  }
 
 
 
   }
 
 
-//   #price {
-//   color: green;
-// }
+
 
 
 }
