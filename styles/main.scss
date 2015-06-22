@@ -243,9 +243,6 @@ li {
 
 }
 
-.itemImage {
-  object-fit: fill;
-}
 
 
 
@@ -253,43 +250,48 @@ li {
   margin-bottom: 10px;
 
 
-.itemTitle {
-  color: $black;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.itemSeller {
-  float: left;
-  color: $gray;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-}
-
-.itemPrice {
-  float: right;
-  color: $green;
-}
 
 
 li {
   @include span-columns(4);
   @include omega(3n);
   float: left;
-  width: 200px;
-  height: 273px;
+  width: 215px;
+  height: 229px;
   margin-top: 30px;
    position: relative;
   background: $white;
   border: 1px solid $lightgray;
 
+.itemImage {
+  object-fit: fill;
+}
+
+.title {
+  color: $black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.seller {
+  float: left;
+  color: $gray;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: underline;
+
+}
+
+.price {
+  float: right;
+  color: $green;
+}
 
   &:hover .socialBtn {
     opacity: 1;
 }
+
   .socialRow {
   position: absolute;
   top: 0;
@@ -326,7 +328,11 @@ li {
   width: 15px;
   }
 
-  }
+
+
+
+}
+
 
 
 
